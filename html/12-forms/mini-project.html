@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <h1>Student Registration</h1>
+
+    <form action="/register" method="POST">
+      <!-- Full Name -->
+      <label for="name">Full Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <br /><br />
+
+      <!-- Course -->
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="" selected disabled>Select Course</option>
+        <option value="frontend">Frontend Development</option>
+        <option value="backend">Backend Development</option>
+        <option value="fullstack">Full Stack Development</option>
+        <option value="ai">AI Engineer</option>
+        <option value="data-analyst">Data Analyst</option>
+        <option value="data-science">Data Science</option>
+        <option value="machine-learning">Machine Learning</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Skills -->
+      <label>Skills:</label>
+
+      <input type="checkbox" id="html" name="skills" value="HTML" />
+      <label for="html">HTML</label>
+
+      <input type="checkbox" id="css" name="skills" value="CSS" />
+      <label for="css">CSS</label>
+
+      <input type="checkbox" id="javascript" name="skills" value="JavaScript" />
+      <label for="javascript">JavaScript</label>
+
+      <input type="checkbox" id="react" name="skills" value="React" />
+      <label for="react">React</label>
+
+      <input type="checkbox" id="tailwind" name="skills" value="Tailwind" />
+      <label for="tailwind">Tailwind</label>
+
+      <br /><br />
+
+      <!-- Gender -->
+      <label>Gender:</label>
+
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label>
+
+      <br /><br />
+
+      <!-- Message -->
+      <label for="message">Message:</label>
+      <br /><br />
+
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="50"
+        placeholder="Your Feedback"
+      ></textarea>
+
+      <br /><br />
+
+      <label for="resume">Upload Resume</label>
+      <input type="file" name="resume" id="resume" />
+
+      <br />
+      <br />
+
+      <!-- Submit Button -->
+
+      <!-- <input type="submit" /> -->
+      <button type="submit">Submit</button>
+      <!-- <input type="reset" /> -->
+       <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
