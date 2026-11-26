@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      form {
+        padding: 20px;
+      }
+
+      input {
+        color: orange;
+        border: none;
+      }
+
+      #ip1 {
+        color: purple;
+        outline: none;
+      }
+
+      .input2 {
+        color: brown;
+        outline: none;
+      }
+
+      input[type="password"] {
+        outline: 10px solid salmon;
+        color: blueviolet;
+      }
+
+      /* Speceficity in CSS Selectors */
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input
+        id="ip1"
+        class="input1"
+        type="text"
+        placeholder="Enter Your Name"
+      />
+      <br />
+      <br />
+      <input
+        id="ip2"
+        class="input2"
+        type="email"
+        placeholder="Enter Your Email"
+      />
+      <br />
+      <br />
+      <input type="password" placeholder="Enter Your Password" />
+    </form>
+  </body>
+</html>
