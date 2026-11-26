@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Selector</title>
+    <style>
+        div > p{
+            background-color: purple;
+            color: white;
+        }
+
+        section p{
+            background-color: orange;   
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>I am direct child of div container</p>
+
+      <section>
+        <p>I am direct child of section & nested child of div container</p>
+      </section>
+    </div>
+  </body>
+</html>
