@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascading Effect with ID vs Class vs other selectors</title>
+    <style>
+      /* Universal Selector (*) -> It targets all the elements 
+         Element Selector -> They target only those elements who have the same name */
+      * {
+        color: yellowgreen;
+      }
+
+      h2 {
+        background-color: brown;
+        color: white;
+      }
+
+      h1{
+        background-color: blueviolet;
+        color: white;
+      }
+
+      .text{
+        background-color: aquamarine;
+        color: brown;
+      }
+
+      #heading{
+        background-color: chocolate !important;
+        color: white;
+      }
+
+
+    </style>
+  </head>
+  <body style="background-color: black">
+    <h1 id="heading" class="text" style="background-color: darkgreen;">Hello guys</h1>
+
+    <p>Hello how are</p>
+
+    <span>I am span</span>
+    <h2>I am h2</h2>
+    <h3>I am h3</h3>
+    <h2>I am h2</h2>
+  </body>
+</html>
