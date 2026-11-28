@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em unit</title>
+    <style>
+      /* Note : by dafault all the elements except heading tags have 16px by default font size 
+        
+        Note : 1em -> current font size
+        if font size -> 16px then 1em -> 16px & 2em -> 32px & 4em -> 64px
+        if font size -> 18px then 1em -> 18px  -||- 
+        if font size -> 20px then 1em -> 20px  -||- */
+
+      .box {
+        /* height: 16px; */
+        /* width: 16px; */
+
+        background-color: brown;
+        font-size: 20px;
+
+        height: 4em; /* */
+        width: 4em; /* */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">I am a box</div>
+    <span>I am span</span>
+    <section>I am section</section>
+    <a href="">Click me</a>
+  </body>
+</html>
