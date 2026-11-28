@@ -1,0 +1,15 @@
+/* Note by default : all html elements have auto height and full width for block elements */
+
+.box {
+    background-color: purple;
+    color: orange;
+    /* height: 100vh; */
+    min-height: 100vh;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin-top: 10px;
+}
